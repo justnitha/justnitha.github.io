@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/frontend/image/image_2/favicon-32x32.png">
+  <title>Frontend Mentor | News homepage</title>
+  <link rel="stylesheet" href="/frontend/css/chalenge2.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .dd{background-color: red;
+    opacity:20; }
+  </style>
+</head>
+<body  class="lg:w-3/4 lg:mx-auto p-5 lg:p-0" >
+  <!-- navbar -->
+  <!-- offcanvas -->
+  <div id="mySidenav" class="overflow-x-hidden shadow-xl fixed bg-white  top-0 right-0 h-full w-0  lg:hidden" style="transition: 0.5s;">
+    <a href="#" class="text-black" onclick="closeNav()">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 block ms-auto hover:animate-spin mt-10 ">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>   
+    </a>
+    <ul class="gap-4 ms-auto lg:hidden pt-16 p-5 leading-10 ">
+        <li><a href="#" class="text-ocean-400">Home</a></li>
+        <li><a href="#" class="text-ocean-400">New</a></li>
+        <li><a href="#" class="text-ocean-400">Popular</a></li>
+        <li><a href="#" class="text-ocean-400">Trending</a></li>
+        <li><a href="#" class="text-ocean-400">Categories</a></li>
+        <li><a href="index.html" class="text-ocean-400">Go Back</a></li>
+    </ul>
+  </div>
+  <!-- desktop -->
+  <div class="container mx-auto" id="main">
+    <nav class="flex justify-between items-center pt-10 pb-5">
+      <div class="">
+        <img src="/frontend/image/image_2/logo.svg" alt="">
+      </div>
+      <div class="">
+        <ul class="lg:flex hidden gap-6">
+          <li><a href="#" class="text-ocean-400">Home</a></li>
+          <li><a href="#" class="text-ocean-400">New</a></li>
+          <li><a href="#" class="text-ocean-400">Popular</a></li>
+          <li><a href="#" class="text-ocean-400">Trending</a></li>
+          <li><a href="#" class="text-ocean-400">Categories</a></li>
+        </ul>
+      </div>
+      <!-- tombol hamburger -->
+      <span onclick="openNav()" class="lg:hidden  ">
+        <svg width="40" height="17" xmlns="http://www.w3.org/2000/svg" class="cursor-pointer"><g fill="#00001A" fill-rule="evenodd"><path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z"/><path d="M0 0h40v3H0z"/></g></svg>
+      </span>
+    </nav>
+  </div>
+  <!-- Isi -->
+  <section id="sec"class="container mx-auto mt-7">
+  <!-- jomborton -->
+  <div class="lg:flex gap-6">
+    <div class="lg:w-[70%]">
+      <img src="/frontend/image/image_2/image-web-3-desktop.jpg" alt="" class="hidden lg:flex">
+      <img src="/frontend/image/image_2/image-web-3-mobile.jpg" alt="" class="lg:hidden">
+      <div class="lg:flex">
+        <h1 class="font-bold text-5xl lg:text-6xl text-black mt-8">The Bright Future Of Web 3.0?</h1>
+        <div class="mt-10">
+          <small class="leading-3 text-ocean-400 text-xl lg:text-xs">
+            We dive into the next evolution of the web that claims to put the power of the platform back into the gands of the people. But is it realy fulfiling it's promise?
+          </small> <br>
+          <button class=" bg-sun px-10 py-3 mt-10">
+            <a href="#" class="text-white">Read More</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="py-6 px-5 bg-black-100 lg:w-[28%] mt-16 lg:mt-0">
+      <h1 class="text-5xl font-bold text-orange-10">New</h1>
+      <!--sub judul-->
+      <div class="mt-7 cursor-pointer">
+        <h3 class="text-white text-base font-bold">Hydrogen Vs Electric Cars</h3>
+        <p class="text-sm mt-2 text-ocean-300">Will hydrogen-fueled cars ever catch up to Evs?</p>
+        <hr class="mt-10">
+      </div>
+      <div class="mt-10 cursor-pointer">
+        <h3 class="text-white text-base font-bold">The Downsides of Al Artistry</h3>
+        <p class="text-sm mt-2 text-ocean-300">What are the possible adverse effects of on-demand Al image generation?</p>
+        <hr class="mt-10">
+      </div>
+      <div class="mt-10 cursor-pointer">
+        <h3 class="text-white text-base font-bold">Is VC Funding Drying Up?</h3>
+        <p class="text-sm mt-2 text-ocean-300">Private funding by VC firms is down 50% YOY. We take a look at what the means.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Gambar card -->
+  <div class="lg:flex lg:mt-16 lg:justify-between ">
+    <div class="flex gap-5 items-center lg:w-2/4 mt-10 lg:mt-0">
+      <img src="/frontend/image/image_2/image-retro-pcs.jpg" alt="" class="lg:w-3/12 w-2/5">
+      <div class="lg:me-auto leading-10">
+        <span class="text-3xl font-bold text-ocean-300">01</span>
+         <h4 class="font-bold text-ocean-400 text-xl lg:text-base">Reviving Retro Pcs</h4>
+         <p class="text-base lg:text-xs">What happens when old PCs are given modern upgrades?</p>
+      </div>
+    </div>
+    <div class="flex gap-5 items-center lg:w-2/4 lg:ms-10 mt-10 lg:mt-0">
+      <img src="/frontend/image/image_2/image-top-laptops.jpg" alt="" class="lg:w-3/12 w-2/5">
+      <div class="leading-10">
+        <span class="text-3xl font-bold text-ocean-300">02</span>
+         <h4 class="font-bold text-ocean-400  ">Top 10 Laptops of 2022</h4>
+         <p class="text-base lg:text-xs">Our best picks for various needs and budgets</p>
+      </div>
+    </div>
+    <div class="flex gap-5 lg:w-2/4 items-center mt-10 lg:mt-0">
+      <img src="/frontend/image/image_2/image-gaming-growth.jpg" alt="" class="lg:w-3/12 w-2/5 lg:ms-10">
+      <div class="w-2/3 ms-auto leading-10 ">
+        <span class="text-3xl font-bold text-ocean-300">03</span>
+         <h4 class="font-bold text-ocean-400 ">The Growth of Gaming</h4>
+         <p class="text-base lg:text-xs">How the pandemic has sparked fresh opportunities</p>
+      </div>
+    </div>
+
+  </div>
+  </section>
+  <div id="sec"class="attribution mt-16 py-5  ">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Just Xaxa</a>.
+  </div>
+  
+  <script src="js/chalenge2.js"></script>
+</body>
+</html>

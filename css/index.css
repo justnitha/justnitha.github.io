@@ -1,0 +1,78 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.parallax span{
+    text-shadow: 2px 2px ;
+}
+.parallax img{
+    position:absolute;
+    top: 0;
+    left: 0;
+    pointer-events:none;
+}
+#sec {
+    position: relative;
+    background: #2a122a;
+}
+#sec h2{
+    margin-bottom: 10px;
+}
+.btn {
+    background-color: orange;
+    color: white;
+    padding: 5em 1em;
+    border: none;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.btn.btn-background-slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: tomato;
+    transition: transform 300ms linear;
+    transform: scaleY(0);
+    transform-origin:bottom;
+    border-radius: 10px;
+
+}  
+.btn.btn-background-slide:hover::before{
+    transform: scaleY(1);
+}
+.btn.btn-background-slide {
+    transition: color 300ms linear;
+    z-index: 1;
+}  
+.btn.btn-background-slide:hover{
+    color: white;
+}
+.attribution {
+    background: #2a122a;
+    font-size: 11px;
+    text-align: center;
+    color:white;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+.dd{
+    background-color: red;
+    opacity:20; 
+}
+
