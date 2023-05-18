@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+
+}
+/* section paling atas */
+.parallax span{
+    text-shadow: 2px 2px ;
+}
+.parallax img{
+    position:absolute;
+    top: 0;
+    left: 0;
+    pointer-events:none;
+}
+.parallax svg{
+    pointer-events:none;
+}
+#Layer_1{
+    width:500px;
+    transform: translate(-50,-50%);
+
+}
+#Layer_1 text{
+    stroke: #1f1e6a;
+    stroke-width:5px;
+    fill: transparent;
+    stroke-dasharray: 9400;
+    stroke-dashoffset: 9400;
+    animation: animate 5s forwards infinite;
+
+}
+/* LayerMobile */
+#Layer_2{
+    width:500px;
+    transform: translate(-50,-50%);
+
+}
+#Layer_2 text{
+    stroke: #1f1e6a;
+    stroke-width:5px;
+    fill: transparent;
+    stroke-dasharray: 9400;
+    stroke-dashoffset: 9400;
+    animation: animate 5s forwards infinite;
+
+}
+@keyframes animate {
+
+    to{
+        stroke-dashoffset: 1000; */
+        stroke:#1f1e6a;
+        stroke-width:5px;
+        fill:#de6759;
+    }
+    
+}
+/*section image page */
+.product-card {
+  position: relative;
+  max-width: 355px;
+  border-radius: 25px;
+  padding: 20px 30px 30px 30px;
+  background: #9873e5;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+  overflow: hidden;
+}
+.product-card .logo-cart img{
+  height: 60px;
+  /* object-fit: cover; */
+}
+/* ------------------------------------- */
+/* --------------Chalenge 1------------- */
+/* ------------------------------------- */
+.product-card .main-images img{
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.product-card .main-images img.active{
+  opacity: 1;
+}
+.product-card .shoe-details .shoe_name{
+  font-size: 24px;
+  font-weight: 500;
+  color: #161616;
+}
+.product-card .shoe-details p{
+  font-size: 12px;
+  font-weight: 400;
+  color: #333;
+  text-align: justify;
+}
+.product-card .shoe-details .stars i{
+  margin: 0 -1px;
+  color: #333;
+}
+.product-card .color-price .color-option{
+  display: flex;
+  align-items: center;
+}
+.color-price .color-option .color{
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  margin-right: 8px;
+}
+.color-option  .circles{
+  display: flex;
+}
+.color-option  .circles .circle{
+  height: 18px;
+  width: 18px;
+  background: #146C94;
+  border-radius: 50%;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.color-option  .circles .circle.blue.active{
+  box-shadow: 0 0 0 2px #fff,
+              0 0 0 4px #146C94;
+}
+.color-option  .circles .circle.pink{
+  background: #19A7CE;
+}
+.color-option  .circles .circle.pink.active{
+  box-shadow: 0 0 0 2px #fff,
+               0 0 0 4px #19A7CE;
+}
+.color-option  .circles .circle.yellow{
+  background: #6C9BCF;
+}
+.color-option  .circles .circle.yellow.active{
+  box-shadow: 0 0 0 2px #fff,
+               0 0 0 4px #6C9BCF;
+}
+/* ------------------------------------- */
+/* --------------Chalenge 2------------- */
+/* ------------------------------------- */
+.product-card .main-images2 img{
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.product-card .main-images2 img.active2{
+  opacity: 1;
+}
+
+.color-price .color-option2 .color{
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  margin-right: 8px;
+}
+.color-option2  .circles{
+  display: flex;
+}
+
+.color-option2  .circles .circle2{
+  height: 18px;
+  width: 18px;
+  background: #F5C6EC;
+  border-radius: 50%;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.color-option2  .circles .circle2.blue.active2{
+  box-shadow: 0 0 0 2px #fff,
+              0 0 0 4px #F5C6EC;
+}
+.color-option2  .circles .circle2.pink{
+  background: #DFFFD8;
+}
+.color-option2  .circles .circle2.pink.active2{
+  box-shadow: 0 0 0 2px #fff,
+               0 0 0 4px #DFFFD8;
+}
+.color-option2  .circles .circle2.yellow{
+  background: #2B3A55;
+}
+.color-option2  .circles .circle2.yellow.active2{
+  box-shadow: 0 0 0 2px #fff,
+               0 0 0 4px #2B3A55;
+}
+.btn {
+  background-color: orange;
+  color: white;
+  /* padding: 5em 1em; */
+  border: none;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.btn.btn-background-slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background-color: tomato;
+  transition: transform 300ms linear;
+  transform: scaleX(0);
+  transform-origin:left;
+  border-radius: 10px;
+
+}  
+.btn.btn-background-slide:hover::before{
+  transform: scaleX(1);
+}
+.btn.btn-background-slide {
+  transition: color 300ms linear;
+  z-index: 1;
+}  
+.btn.btn-background-slide:hover{
+  color: white;
+}
+

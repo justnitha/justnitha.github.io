@@ -13,8 +13,7 @@ var typingEffect = new Typed(".multitext2", {
     backSpeed : 80,
     backDelay : 1500
 })
-
-
+//scrool
 let text = document.getElementById('text');
 
 window.addEventListener('scroll', () => {
