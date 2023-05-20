@@ -37,7 +37,6 @@ $(window).scroll(function() {
         $('#text2').css("display","block");
     }
 });
-
 // image page chalenge 1
 let circle = document.querySelector(".color-option");
 
