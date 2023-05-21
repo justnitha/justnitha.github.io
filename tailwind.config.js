@@ -1,8 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./frontend/**/*.{html,js}"],
+  content: ["./**/*.{html,js}"],
   theme: {
     extend: {
+      height: {
+        '97': '32rem',
+      },
       width:{
         '70': '70%',
         '28': '28%',
@@ -23,6 +26,9 @@ module.exports = {
         'radial': '#1f1e6a',
         'radial-100': '#9873e5',
         'radial-200': '#7849bb',
+        'biru': '#4682d4',
+        'hitam-00': '#494f4f',
+        'hitam-01': '#222222',
       }
     },
   },
