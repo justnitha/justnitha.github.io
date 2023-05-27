@@ -1,0 +1,314 @@
+
+.garis a{
+    width: max-content;
+    position: relative;
+    cursor: pointer;
+   
+}
+.garis a::after{
+    content: "";
+    position: absolute;
+    top: 23px;
+    bottom: 0px;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    background-color:#d9622b ;
+    transition: 0.3s;
+    transition-timing-function:linear;
+    transform-origin: left;
+    transform: scaleX(0);
+}
+.active,.garis a:hover::after{
+    transform: scaleX(1);
+    color:#d9622b;
+    border-bottom-width: 2px;
+    border-color: #d9622b;
+}
+.btn2{
+    box-shadow: 5px 5px 0 #111729;
+    transition: 0.5s;
+    transition-timing-function: ease;
+}
+.btn2:hover{
+    transition: 0.5s;
+    box-shadow: 5px 5px 0 #d9622b; 
+}
+.btn3{
+    box-shadow: 5px 5px 0 #f16714;
+    transition: 0.5s;
+    transition-timing-function: ease;
+}
+.btn3:hover{
+    transition: 0.5s;
+    box-shadow: 5px 5px 0 #111729;
+}
+/* My Services */
+.ground{
+    box-shadow: none;
+    transition: 0.5s;
+    transition-timing-function: ease;
+}
+.ground:hover{
+    box-shadow: 5px 5px 0 #111729;
+}
+.btn4{
+    box-shadow: 5px 5px 0 #c18d30;
+    transition: 0.5s;
+    transition-timing-function: ease;
+}
+.btn4:hover{
+    transition: 0.5s;
+    box-shadow: 5px 5px 0 #f3ce49;
+    background-color: #f16714;
+    color: white;
+}
+.preview-box{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    text-align: end;
+    max-width: 900px;
+    width: 100%;
+    z-index: 5;
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 3px;
+    padding: 0 5px 5px 5px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+}
+.preview-box.show{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+    transition: all 0.3s ease;
+}
+/* .preview-box .details .title{
+    display: flex;
+    font-size: 18px;
+    font-weight: 400;
+} */
+.details .icon{
+    color: #007bff;
+    font-size: 20px;
+    cursor: pointer;
+}
+.preview-box .image-box{
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+.image-box .slide{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    height: 50px;
+    width: 100px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 3px;
+}
+.slide.prev{
+    left: -10rem;
+   
+}
+.slide.next{
+    right: -10rem;
+   
+}
+.image-box img{
+    width: 100%;
+    border-radius: 0 0 3px 3px;
+}
+.shadow{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    display: none;
+    background: rgba(0,0,0,0.45);
+}
+/* @media(max-width: 1000px){
+    .gallery .image{
+      width: calc(100% / 2);
+    }
+}
+@media(max-width: 600px){
+    .gallery .image{
+      width: 100%;
+      padding: 4px;
+    }
+} */
+.iconn {
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    top: 30px;
+    left:30px;
+}
+.containerr {
+    position: relative;
+    transition: 0.3s;
+}
+.containerr:hover{
+    box-shadow:10px 10px 0 #111729;
+}  
+.imagee {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transform: scaleX(0);
+    transform-origin: left;
+    background-color: aqa;
+    transition: 0.4s;
+    transition-timing-function: linear;
+}
+.containerr:hover .overlay {
+    width: 100%;
+    transform: scaleX(1);
+}
+.imagee3{
+    display:none;
+    
+}
+/* Testimonial */
+.slider-container{
+    position: relative;
+    height: 200px;
+}
+.slider-width{
+    position: absolute;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    left: 0;
+    top: 0;
+    transition: 0.4s ease-in-out;
+}
+.item{
+   /* display: flex; */
+   justify-content: center;
+   align-items: center;
+    /* width: 300px; */
+    width: 100%;
+    margin: 0 0px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.dot {
+    cursor: pointer;
+    height: 14px;
+    width: 14px;
+    margin: 0 2px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    background-color: #111729;
+}
+
+/* ------------- */
+/* testimonial */
+/* ------------- */
+.splide__list{
+    backface-visibility:hidden;
+    height:100%;
+    
+    margin:0!important;
+}
+.splide.is-initialized:not(.is-active) 
+.splide__list{display:block}
+.splide__pagination{
+    -ms-flex-align:center;
+    align-items:center;
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+    -ms-flex-pack:center;
+    justify-content:center;
+    margin:0;
+    pointer-events:none;
+}
+.splide__pagination li{
+    display:inline-block;
+    line-height:1;
+    list-style-type:none;
+    margin:0;
+    pointer-events:auto}
+.splide:not(.is-overflow)
+.splide__progress__bar{width:0}
+.splide{
+    position:relative;
+    visibility:hidden
+}
+.splide.is-initialized,.splide.is-rendered{visibility:visible}
+.splide__slide{
+    backface-visibility:hidden;
+    -ms-flex-negative:0;
+    flex-shrink:0;
+    list-style-type:none!important;
+    margin:0;position:relative
+} 
+.splide__sr{
+    clip:rect(0 0 0 0);
+    border:0;
+    height:1px;
+    margin:-1px;
+    overflow:hidden;
+    padding:0;
+    position:absolute;
+    width:1px
+} 
+.splide__track{
+    overflow:hidden;
+    position:relative;
+    z-index:0}
+
+/* @keyframes splide-loading{0%{transform:rotate(0)}to{transform:rotate(1turn)}} */
+.splide__arrow{
+   display: none;
+} 
+.splide__pagination{
+    bottom:.5em;
+    left:0;
+    padding:0 1em;
+    position:absolute;
+    right:0;z-index:1;
+}
+.splide__pagination__page{
+    background:#f16714;
+    border-radius:50%;
+    display:inline-block;
+    height:8px;
+    margin:3px;
+    opacity:.7;
+    padding:0;
+    position:relative;
+    transition:transform .2s linear;
+    width:8px
+}
+.splide__pagination__page.is-active{
+    background:black;
+    transform:scale(1.4);
+    z-index:1;
+    outline: 12px #ffffff;
+}
+.splide__pagination__page:hover{cursor:pointer;}
+ 
