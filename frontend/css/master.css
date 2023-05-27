@@ -1128,6 +1128,10 @@ video {
   height: 165vh;
 }
 
+.h-\[175vh\] {
+  height: 175vh;
+}
+
 .w-0 {
   width: 0px;
 }
