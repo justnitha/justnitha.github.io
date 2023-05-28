@@ -1,0 +1,53 @@
+body{
+    width: 80%;
+    margin: auto;
+}
+form{
+    margin: 10px;
+    font-size: 30px;
+}
+select{
+    font-size: 30px;
+}
+p,input,label,button{
+    font-size: 30px;
+}
+.stylePeleng{
+    width: 35%;
+    height: 50vh;
+    margin:10rem auto;
+}
+.stylePeleng h2{
+    padding: 10px 20px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+}
+.bungkus{
+    margin: 0 0 19px 0;
+}
+.bungkus input{
+    padding: 3px 10px;
+    width: 95.3%;
+}
+@media screen and (max-width:767px) {
+    .stylePeleng{
+        width: 90%;
+    }
+    .bungkus{
+        padding: 0 20px;
+    }
+    .bungkus input{
+        width: 93%;
+    }
+    .bungkus button{
+        margin-top: 10px;
+    }
+}
+@media screen and (min-width:767px) and (max-width:1023px) {
+    .stylePeleng {
+        width: 100%;
+    }
+}
