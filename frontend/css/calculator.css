@@ -62,7 +62,7 @@ button{
     color: #864cff;
     letter-spacing: 9px;
 }
-@media only screen and (max-width:768px) {
+@media  screen and (max-width:767px) {
     .age{
         font-size: 80px;
     }
