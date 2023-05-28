@@ -76,7 +76,7 @@ button{
         padding: 2rem;
     }
     .inp{
-        font-size: 20px;
+        font-size: 30px;
     }
     .bungkus{
         justify-content: space-between;
@@ -95,8 +95,13 @@ button{
     form{
         width: 90%;
     }
+    hr{
+        margin:10px 0;
+    }
     
 }
 @media screen and (min-width:) {
-    
+    form{
+        width: 100%;
+    }
 }
