@@ -64,7 +64,11 @@ button{
 }
 @media  screen and (max-width:767px) {
     .age{
-        font-size: 80px;
+        font-size: 45px;
+        line-height: 3rem;
+    }
+    hr{
+        margin:0px 0;
     }
     form{
         margin-top: 7rem;
@@ -72,7 +76,7 @@ button{
         padding: 2rem;
     }
     .inp{
-        font-size: 30px;
+        font-size: 20px;
     }
     .bungkus{
         justify-content: space-between;
@@ -83,6 +87,16 @@ button{
     }
     img{
         position: absolute;
-        left: 14rem;
+        left: 10rem;
+        padding: 10px;
     }
+}
+@media screen and (min-width:767px) and (max-width:1023px) {
+    form{
+        width: 90%;
+    }
+    
+}
+@media screen and (min-width:) {
+    
 }
