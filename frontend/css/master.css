@@ -1108,8 +1108,8 @@ video {
   height: 100vh;
 }
 
-.h-\[150vh\] {
-  height: 150vh;
+.h-\[175vh\] {
+  height: 175vh;
 }
 
 .h-\[450px\] {
@@ -1122,14 +1122,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-\[165vh\] {
-  height: 165vh;
-}
-
-.h-\[175vh\] {
-  height: 175vh;
 }
 
 .w-0 {
@@ -2964,6 +2956,10 @@ video {
 
 .align-super {
   vertical-align: super;
+}
+
+.font-\[Poppins\] {
+  font-family: Poppins;
 }
 
 .text-2xl {

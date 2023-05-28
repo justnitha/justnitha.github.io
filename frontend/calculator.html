@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/frontend/css/master.css">
+    <link rel="stylesheet" href="/frontend/css/calculator.css">
+</head>
+
+<body class="font-[Poppins]">
+    <form class="mx-auto shadow-2xl">
+        <div class="bungkus">
+            <div class="">
+                <p>DAY</p>
+                <input type="text" name="date" id="date" class="inp" size="1" placeholder="DD">  
+            </div>
+            <div class="">
+                <p>MONTH</p>
+                <input type="text" name="month" id="month" class="inp" size="1" placeholder="MM"> 
+            </div>
+            <div class="">
+                <p>YEAR</p>
+                <input type="text" name="year" id="year" class="inp" size="1" placeholder="YYYY">  
+            </div>      
+        </div>
+        <div class="bungkus2">
+            <hr>
+            <button name="submit" id="submit" value="submit" type="button" onclick="age()"><img src="/frontend/image/img_calc/icon-arrow.svg" alt=""></button>
+        </div>
+        
+        <!-- <input type="button" name="submit" id="submit" value="submit" onclick="age()"><img src="/frontend/image/img_calc/icon-arrow.svg" alt=""> -->
+        <div class="age " id="age">
+            <p><span>--</span>years</p>
+            <p><span>--</span>months</p>
+            <p><span>--</span>day</p>
+        </div>
+    </form>
+
+<script>
+    function age() {
+        var d1 = document.getElementById('date').value;
+        var m1 = document.getElementById('month').value;
+        var y1 = document.getElementById('year').value;
+
+        var date = new Date();
+        var d2 = date.getDate();
+        var m2 = 1 + date.getMonth();
+        var y2 = date.getFullYear()
+        var month = [31,28,31,30,31,30,31,31,30,31,30,31]; 
+        if (d1 > d2 ){
+            d2 =d2 + month[m2 -1];
+            m2 = m2 - 1;
+        }
+        if(m1>m2){
+            m2 = m2 +12;
+            y2 = y2-1
+        }
+        var d = d2 -d1;
+        var m = m2 -m1;
+        var y = y2-y1;
+
+    document.getElementById('age').innerHTML = '<p><span>' + y+ '</span>'+ 'years</p>'+'<p><span>' + m+ '</span>'+ 'months</p>'+'<p><span>' + d+ '</span>'+ 'days</p>';
+    }
+    
+  
+</script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300&display=swap');
+
+body{
+    background-color: rgb(254, 254, 254);
+    
+}
+form{
+    background-color: white;
+    margin-top: 15rem;
+    padding: 3rem 5rem; 
+    border-radius: 50px;
+    border-bottom-right-radius: 25%;
+    width: 50%; 
+    
+    
+}
+.inp{
+    border-width: 1px;
+    border-color: rgb(17 23 41);
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    color: #888888;
+    
+}
+.bungkus{
+    display: flex;
+    gap: 30px;  
+     
+}
+.bungkus2{
+    display: flex;
+}
+p{
+    color: #888888;
+}
+img{
+    background-color: #864cff;
+    padding: 20px;
+    border-radius: 50%;
+    position: absolute;
+}
+hr{
+    margin: 30px 0 10px 0;
+    width: 90%;
+}
+button{
+    margin-top: -70px;
+}
+.age{
+    font-size: 90px;
+    font-weight: bold;
+    line-height: 5.5rem;
+    font-style: italic;
+    
+}
+.age p {
+    color: black;
+}
+.age span{
+    color: #864cff;
+    letter-spacing: 9px;
+}
+@media only screen and (max-width:768px) {
+    .age{
+        font-size: 80px;
+    }
+    form{
+        margin-top: 7rem;
+        width: 90%;
+        padding: 2rem;
+    }
+    .inp{
+        font-size: 30px;
+    }
+    .bungkus{
+        justify-content: space-between;
+        gap: 0;
+    }
+    .bungkus2{
+        padding: 5rem 0;
+    }
+    img{
+        position: absolute;
+        left: 14rem;
+    }
+}
