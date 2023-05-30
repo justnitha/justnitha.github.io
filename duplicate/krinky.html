@@ -21,7 +21,7 @@
     </style>
 </head>
 <body class="overflow-x-hidden bg-[#fef7ee] scroll-smooth">
-    <section class="sm:h-[100vh] md:h-[100vh] lg:h-[90vh] h-[100vh] " id="home">
+    <section class="" id="home">
         <!-- acesoris -->
         <!-- <div class="bg-[#fceed8] w-11/12 -top-44 -right-36 -rotate-45 sm:-top-72 sm:-right-80 sm:h-[110vh] rounded-3xl h-4/5 absolute lg:hidden"></div> -->
         <!-- akhir acesoris -->
@@ -85,7 +85,7 @@
         </div>
     </section>
     <!-- ABOUTME -->
-    <section class="bg-white md:h-[115vh] lg:h-[100vh] sm:h-[125vh] h-[175vh]  mt-10 lg:mt-0  sm:mt-0 md:mt-0">
+    <section class="bg-white  mt-10 lg:mt-0  sm:mt-0 md:mt-0" id="about">
         <div class="flex justify-center gap-28 lg:gap-40 md:gap-20 bg-radial-300 py-12">
             <img src="/duplicate/IMG/img_krinky/g1.svg" alt="" class="hidden lg:block md:block cursor-pointer">
             <img src="/duplicate/IMG/img_krinky/g2.svg" alt="" class="hidden lg:block cursor-pointer">
@@ -428,7 +428,7 @@
    <!-- Get in touch -->
    <section class="bg-radial-300 py-12 lg:py-20 px-5 lg:px-16 md:px-28 md:py-20">
         <div class="lg:flex justify-between">
-            <div class="bg-white p-10 lg:w-2/4 wow pulse" data-wow-iteration="ease" data-wow-duration="1500ms">
+            <div class="bg-white p-10 lg:w-2/4">
                 <h3 class="text-4xl font-bold tracking-wide">Get in touch</h3>
                 <p class="text-[#555555] text-lg mt-3">Our friendly team would love to hear from you.</p>
                 <form action="#" class="mt-6">
@@ -457,7 +457,7 @@
             </div>
             <div class="lg:w-2/6 mt-12 lg:mt-0">
                 <img src="/duplicate/IMG/img_krinky/contact-bg.png" alt="" class="w-full">
-                <div class="flex mt-10 gap-4 items-center">
+                <div class="flex mt-10 gap-4 items-center wow slideInRight">
                     <div class="bg-[#a7d1cf] p-3 lg:p-4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
                             <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
@@ -468,7 +468,7 @@
                         <p class="lg:text-2xl text-xl text-white mt-4">+01 123 654 8096</p>
                     </div>
                 </div>
-                <div class="flex mt-10 gap-4 items-center">
+                <div class="flex mt-10 gap-4 items-center wow slideInRight">
                     <div class="lg:p-4 p-3 bg-[#f5c65f]">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
@@ -479,7 +479,7 @@
                         <p class="lg:text-2xl text-xl text-white mt-4">info@domainname.com</p>
                     </div>
                 </div>
-                <div class="flex mt-10 gap-4 items-start">
+                <div class="flex mt-10 gap-4 items-start wow slideInRight">
                     <div class=" p-3 lg:p-4 bg-[#f6ceb8]">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
                             <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
@@ -508,22 +508,6 @@
    </footer>
     <script src="/duplicate/js/krinky.js"></script>
     <script src="/pluggin/js/wow.js"></script>
-    <script>
-         wow = new WOW(
-      {
-        animateClass: 'animated',
-        offset:       100,
-        callback:     function(box) {
-          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
-        }
-      }
-    );
-    wow.init();
-    document.getElementById('moar').onclick = function() {
-      var section = document.createElement('section');
-      section.className = 'section--purple wow fadeInDown';
-      this.parentNode.insertBefore(section, this);
-    };
-    </script>
+    <script src="/pluggin/js/woww.js"></script>
 </body>
 </html>

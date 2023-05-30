@@ -311,4 +311,27 @@
     outline: 12px #ffffff;
 }
 .splide__pagination__page:hover{cursor:pointer;}
+#home{
+    height: 100vh;
+}
+#about{
+    height: 100vh;
+}
+
+@media  screen and (max-width:767px) {
+    #home{
+        height: 80vh;
+    }
+    #about{
+        height: 150vh;
+    }
+}
+@media screen and (min-width:767px) and (max-width:1023px){
+    #home{
+        height: 90vh;
+    }
+    #about{
+        height: 100vh;
+    }
+}
  
