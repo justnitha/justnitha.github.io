@@ -34,7 +34,6 @@ body{
 }
 #section3{
   margin-top: 50px;
-  height: 90vh;
   background-color: #1D2228;
   color:#F2D349;
 }
@@ -84,7 +83,7 @@ body{
   /* width: 100%; */
   border-left: none;
   /* height:72.4%; */
-  background-color: #FB8122;
+  /* background-color: #FB8122; */
 }
 .tabcontent h1{
   font-weight: bold;
@@ -139,7 +138,7 @@ body{
   
 }
 .scrollable-tabs-container li{
-  background-color: #FB8122;
+  /* background-color: #FB8122; */
 }
 
 .scrollable-tabs-container ul.dragging a {
