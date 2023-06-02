@@ -7,12 +7,12 @@ buttonToogle.addEventListener('click', function(){
     mobileMenu.classList.toggle('hidden');
 })
 //multi text
-var typingEffect = new Typed(".multitext", {
-  strings : ["Designer","Devoloper"],
-  typeSpeed : 50,
-  backSpeed : 80,
-  backDelay : 1500,
-});
+// var typingEffect = new Typed(".multitext", {
+//   strings : ["Designer","Devoloper"],
+//   typeSpeed : 50,
+//   backSpeed : 80,
+//   backDelay : 1500,
+// });
 //scrool
 $(document).ready(function(){
   $(window).scroll(function(){
@@ -111,3 +111,11 @@ var splides = new Splide( '.splide', {
 } );
 
 splides.mount();
+
+var typingEffect = new Typed(".multitextt", {
+  strings : ["Designer","Devolepment"],
+  loop : true,
+  typeSpeed : 100,
+  backSpeed : 80,
+  backDelay : 1500
+})

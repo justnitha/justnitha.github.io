@@ -1,94 +1,99 @@
-//multi text
-var typingEffect = new Typed(".multitext", {
-    strings : ["Creative Design", "Digital Marketing","Student","My Portofolio","Web Devolepment"],
-    loop : true,
-    typeSpeed : 100,
-    backSpeed : 80,
-    backDelay : 1500
-})
 
-//scrool
-// let text = document.getElementById('text');
+const tabs = document.querySelectorAll(".scrollable-tabs-container a");
+        const rightArrow = document.querySelector(
+          ".scrollable-tabs-container .right-arrow svg"
+        );
+        const leftArrow = document.querySelector(
+          ".scrollable-tabs-container .left-arrow svg"
+        );
+        const tabsList = document.querySelector(".scrollable-tabs-container ul");
+        const leftArrowContainer = document.querySelector(
+          ".scrollable-tabs-container .left-arrow"
+        );
+        const rightArrowContainer = document.querySelector(
+          ".scrollable-tabs-container .right-arrow"
+        );
+        
+        const removeAllActiveClasses = () => {
+          tabs.forEach((tab) => {
+            tab.classList.remove("active");
+          });
+        };
+        
+        tabs.forEach((tab) => {
+          tab.addEventListener("click", () => {
+            removeAllActiveClasses();
+            tab.classList.add("active");
+          });
+        });
+        
+        const manageIcons = () => {
+          if (tabsList.scrollLeft >= 20) {
+            leftArrowContainer.classList.add("active");
+          } else {
+            leftArrowContainer.classList.remove("active");
+          }
+        
+          let maxScrollValue = tabsList.scrollWidth - tabsList.clientWidth - 20;
+          console.log("scroll width: ", tabsList.scrollWidth);
+          console.log("client width: ", tabsList.clientWidth);
+        
+          if (tabsList.scrollLeft >= maxScrollValue) {
+            rightArrowContainer.classList.remove("active");
+          } else {
+            rightArrowContainer.classList.add("active");
+          }
+        };
+        
+        rightArrow.addEventListener("click", () => {
+          tabsList.scrollLeft += 200;
+          manageIcons();
+        });
+        
+        leftArrow.addEventListener("click", () => {
+          tabsList.scrollLeft -= 200;
+          manageIcons();
+        });
+        
+        tabsList.addEventListener("scroll", manageIcons);
+        
+        let dragging = false;
+        
+        const drag = (e) => {
+          if (!dragging) return;
+          tabsList.classList.add("dragging");
+          tabsList.scrollLeft -= e.movementX;
+        };
+        
+        tabsList.addEventListener("mousedown", () => {
+          dragging = true;
+        });
+        
+        tabsList.addEventListener("mousemove", drag);
+        
+        document.addEventListener("mouseup", () => {
+          dragging = false;
+          tabsList.classList.remove("dragging");
+        });
 
-// window.addEventListener('scroll', () => {
-//     let value = window.scrollY;
-//     text.style.marginTop = value * 1.5 + 'px';
+function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
 
-// });
-
-let circle = document.querySelector(".color-option");
-
-circle.addEventListener("click", (e)=>{
-  let target = e.target;
-  if(target.classList.contains("circle")){
-    circle.querySelector(".active").classList.remove("active");
-    target.classList.add("active");
-    document.querySelector(".main-images .active").classList.remove("active");
-    document.querySelector(`.main-images .${target.id}`).classList.add("active");
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
   }
-});
 
-$(document).ready(function(){
-  $(window).scroll(function(){
-    if($(window).scrollTop() > 300){
-      $('i').css({
-        "opacity":"1", "pointer-events":"auto"
-      });
-    }else{
-      $('i').css({
-        "opacity":"0", "pointer-events":"none"
-      });
-    }
-  });
-  $('i').click(function(){
-    $('html').animate({scrollTop:0},500)
-  });
-});
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
 
-// card
-$(document).ready(function() {
-    
-  var s_round = '.s_round';
-  
-  $(s_round).hover(function() {
-    $('.b_round').toggleClass('b_round_hover');
-    return false;
-  });
-  
-  $(s_round).click(function() {
-    $('.flip_box').toggleClass('flipped');
-    $(this).addClass('s_round_click');
-    $('.s_arrow').toggleClass('s_arrow_rotate');
-    $('.b_round').toggleClass('b_round_back_hover');
-    return false;
-  });
-  
-  $(s_round).on('transitionend', function() {
-    $(this).removeClass('s_round_click');
-    $(this).addClass('s_round_back');
-    return false;
-  });
-});
-$(document).ready(function() {
-    
-  var s_round2 = '.s_round2';
-  
-  $(s_round2).hover(function() {
-    $('.b_round2').toggleClass('b_round_hover2');
-    return false;
-  });
-  
-  $(s_round2).click(function() {
-    $('.flip_box2').toggleClass('flipped');
-    $(this).addClass('s_round_click2');
-    $('.s_arrow2').toggleClass('s_arrow_rotate2');
-    $('.b_round2').toggleClass('b_round_back_hover2');
-    return false;
-  });
-  
-  $(s_round2).on('transitionend', function() {
-    $(this).removeClass('s_round_click2');
-    $(this).addClass('s_round_back2');
-    return false;
-  });
-});
+  // Show the current tab, and add an "active" class to the link that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
