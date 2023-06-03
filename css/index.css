@@ -63,7 +63,7 @@ body{
     and (device-height : 667px) 
     and (-webkit-device-pixel-ratio : 2) { 
       #section3{
-        height: 130vh;
+        height: 140vh;
       }
 }
 @media only screen 
@@ -77,6 +77,11 @@ body{
 @media screen and (min-width:1024px ) {
   #section3{
     height: 160vh;
+  }
+}
+@media screen and (min-width:1344px) {
+  #section3{
+    height: 100vh;
   }
 }
 @media screen and (min-width:1280px ) and (max-width:1344px) {
