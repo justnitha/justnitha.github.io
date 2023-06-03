@@ -46,7 +46,29 @@ body{
 #section3{
   margin-top: 50px;
   background-color: #1D2228;
+  max-height: 200vh;
+
   
+}
+@media  screen and (device-width : 375px) and (device-height : 812px) {
+  #section3{
+    height: 80vh;
+  }
+}
+@media screen and (max-width:767px){
+  #section3{
+    height: 130vh;
+  }
+}
+@media screen and (min-width:1024px ){
+  #section3{
+    height: 120vh;
+  }
+}
+@media screen and (min-width:768px) and (max-width:1024px){
+  #section3{
+    height: 160vh;
+  }
 }
 #section3 #h1{
   background-color: #FB8122;
