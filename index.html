@@ -22,6 +22,29 @@
     </style>
   </head>
 <body>
+    <div id="app" style="display: flex; justify-content: center; align-items: center;">
+      <!-- new element created -->
+    </div>
+    <script>
+      onload = function() {
+        // inisialisasi
+        let id = document.getElementById("app")
+        let loading = document.createElement("div")
+        // fill the content
+        loading.textContent = "Loading"
+        loading.style.fontSize = "28px"
+        id.appendChild(loading)
+        // dalam waktu berapa lama dilakukan pengubahan DOM
+        let loaded = setInterval(() => {
+          loading.textContent = loading.textContent + "."
+        }, 1000);  //1000ms=1detik
+
+        setTimeout(() => {
+          clearInterval(loaded)
+          loading.textContent = "welcome To Our Page"
+        }, 4000) //4s
+      }
+    </script>
     <div class="right-5 lg:right-10 top-2/4 fixed z-10 p-[.5rem] lg:p-[1.5rem] rounded-full bg-[#705ff6]" id="gear">
       <i class="fa-solid fa-gear fa-xl lg:fa-2xl z-10" style="color: #fff;" id="gear2"></i>
     </div>
@@ -196,39 +219,6 @@
                   </button>
               </div>
             </li> 
-            <li>
-              <div class=" text-center border-2 border-radial-300 active w-[300px] lg:w-[500px] h-full " id="aktif">
-                <h1 class="lg:text-3xl text-2xl">Input Style Padding</h1>
-                  <div>
-                      <img src="/homework/image/" alt="tugas2" class="h-[14.5rem] lg:h-[26rem]">
-                  </div>
-                  <button id="btnn" class="btnf btn-background-slide">
-                    <a href="#">Lihat tugas</a>
-                  </button>
-              </div>
-            </li>
-            <li class="">
-              <div class=" text-center border-2 border-radial-300 active w-[300px] lg:w-[500px] h-full " id="aktif">
-                <h1 class="lg:text-3xl text-2xl">Input Style Padding</h1>
-                  <div>
-                      <img src="/homework/image/" alt="tugas3" class="h-[14.5rem] lg:h-[26rem]">
-                  </div>
-                  <button id="btnn" class="btnf btn-background-slide">
-                    <a href="#">Lihat tugas</a>
-                  </button>
-              </div>
-            </li>      
-            <li class="">
-              <div class=" text-center border-2 border-radial-300 active w-[300px] lg:w-[500px] h-full " id="aktif">
-                <h1 class="lg:text-3xl text-2xl">Input Style Padding</h1>
-                  <div>
-                      <img src="/homework/image" alt="tugas4" class="h-[14.5rem] lg:h-[26rem]">
-                  </div>
-                  <button id="btnn" class="btnf btn-background-slide">
-                    <a href="#">Lihat tugas</a>
-                  </button>
-              </div>
-            </li>
           </ul>
           <div class="right-arrow active">
             <i class="fa-solid fa-circle-chevron-right fa-2xl"></i>

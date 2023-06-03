@@ -18,6 +18,7 @@ body{
     
   }
 /* marque */
+
 .text{
   margin-top: 70px;
   /* background-color: aqua; */
@@ -91,7 +92,7 @@ body{
 }
 @media screen and (min-width:1440px) and (max-width:1441px){
   #section3{
-    height: 100vh;
+    height: 170vh;
   }
 }
 /* @media screen and (max-width:1441px){
