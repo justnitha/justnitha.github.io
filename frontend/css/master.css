@@ -643,8 +643,8 @@ video {
   right: 0px;
 }
 
-.right-10 {
-  right: 2.5rem;
+.right-5 {
+  right: 1.25rem;
 }
 
 .top-0 {
@@ -655,10 +655,6 @@ video {
   top: 50%;
 }
 
-.right-5 {
-  right: 1.25rem;
-}
-
 .isolate {
   isolation: isolate;
 }
@@ -667,16 +663,12 @@ video {
   isolation: auto;
 }
 
-.z-\[1\] {
-  z-index: 1;
-}
-
-.z-50 {
-  z-index: 50;
-}
-
 .z-10 {
   z-index: 10;
+}
+
+.z-\[1\] {
+  z-index: 1;
 }
 
 .col-span-1 {
@@ -1193,10 +1185,6 @@ video {
 
 .w-\[300px\] {
   width: 300px;
-}
-
-.w-\[40\%\] {
-  width: 40%;
 }
 
 .w-\[4rem\] {
@@ -2446,10 +2434,6 @@ video {
   background-color: rgb(254 252 232 / var(--tw-bg-opacity));
 }
 
-.bg-\[\] {
-  background-color: ;
-}
-
 .bg-opacity-20 {
   --tw-bg-opacity: 0.2;
 }
@@ -2659,20 +2643,8 @@ video {
   padding: 2.25rem;
 }
 
-.p-\[\] {
-  padding: ;
-}
-
-.p-\[1\.5rem\] {
-  padding: 1.5rem;
-}
-
 .p-\[\.5rem\] {
   padding: .5rem;
-}
-
-.p-\[1rem\] {
-  padding: 1rem;
 }
 
 .px-10 {
@@ -3771,14 +3743,6 @@ video {
     width: 33.333333%;
   }
 
-  .sm\:p-\[\.5rem\] {
-    padding: .5rem;
-  }
-
-  .sm\:p-\[1rem\] {
-    padding: 1rem;
-  }
-
   .sm\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -3822,8 +3786,20 @@ video {
     display: none;
   }
 
-  .md\:h-\[85vh\] {
-    height: 85vh;
+  .md\:h-\[100vh\] {
+    height: 100vh;
+  }
+
+  .md\:h-\[00vh\] {
+    height: 00vh;
+  }
+
+  .md\:h-\[90vh\] {
+    height: 90vh;
+  }
+
+  .md\:h-\[80vh\] {
+    height: 80vh;
   }
 
   .md\:w-2\/4 {
@@ -3836,10 +3812,6 @@ video {
 
   .md\:gap-20 {
     gap: 5rem;
-  }
-
-  .md\:p-\[1rem\] {
-    padding: 1rem;
   }
 
   .md\:px-14 {
@@ -4054,6 +4026,10 @@ video {
     width: 30%;
   }
 
+  .lg\:w-\[40\%\] {
+    width: 40%;
+  }
+
   .lg\:w-\[46\%\] {
     width: 46%;
   }
@@ -4084,10 +4060,6 @@ video {
 
   .lg\:w-full {
     width: 100%;
-  }
-
-  .lg\:w-\[40\%\] {
-    width: 40%;
   }
 
   .lg\:grid-cols-3 {
@@ -4314,8 +4286,12 @@ video {
 }
 
 @media (min-width: 1280px) {
-  .xl\:h-\[95vh\] {
-    height: 95vh;
+  .xl\:h-\[150vh\] {
+    height: 150vh;
+  }
+
+  .xl\:h-\[100vh\] {
+    height: 100vh;
   }
 
   .xl\:w-2\/4 {

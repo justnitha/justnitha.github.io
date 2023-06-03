@@ -123,7 +123,7 @@ body{
 }
 .tabcontent button{
   background-color: #705ff6;
-}
+}  
 
 /* ke 3 */
 .scrollable-tabs-container {
@@ -350,7 +350,6 @@ footer{
   font-weight: bold;
   font-family: 'Rubik', sans-serif;
 }
-
 .btnf {
   background-color: var(--background-color);
   color: #222;
@@ -361,9 +360,37 @@ footer{
   cursor: pointer;
   --background-color: #705ff6;
   --border-size: 2px;
-  --accent-color: #0AF;
+  --accent-color: #99A98F;
+}
+.btnf.btn-background-slide::before {
+  border-radius:10px;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background-color: var(--accent-color);
+  transition: transform 300ms ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
 }
 
+.btnf.btn-background-slide:hover::before,
+.btnf.btn-background-slide:focus::before {
+  transform: scaleX(1);
+}
+
+.btnf.btn-background-slide {
+  transition: color 300ms ease-in-out;
+  z-index: 1;  
+}
+
+.btnf.btn-background-slide:hover,
+.btnf.btn-background-slide:focus {
+  color: white;
+}
 .btnf.btn-border-pop::before {
   border-radius: 0.75em;
   content: '';
@@ -376,7 +403,6 @@ footer{
   border: var(--border-size) solid var(--background-color);
   transition: top, left, right, bottom, 100ms ease-in-out;
 }
-
 .btnf.btn-border-pop:hover::before,
 .btnf.btn-border-pop:focus::before {
   top: calc(var(--border-size) * -4);
@@ -384,6 +410,7 @@ footer{
   right: calc(var(--border-size) * -4);
   bottom: calc(var(--border-size) * -4);
 }
+
 
 @keyframes spin {
   to {
@@ -393,4 +420,5 @@ footer{
 .animate-spinn {
   animation: spin 1s linear infinite;
 }
+
 
