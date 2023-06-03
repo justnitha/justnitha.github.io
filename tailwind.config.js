@@ -24,6 +24,7 @@ module.exports = {
         'sun-200': '#ffe3dd',
         'sun-300': '#f16714',
         'hijau': '#609EA2',
+        'hijau-100': '#BBD6B8',
         'radial': '#1f1e6a',
         'radial-100': '#9873e5',
         'radial-200': '#7849bb',
