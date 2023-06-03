@@ -90,10 +90,13 @@ body{
     height: 120vh;
   }
 }
-@media screen and (min-width:1344px) and (max-width:1440px){
-  #section3{
-    height: 170vh;
-  }
+@media only screen 
+    and (device-width : 1440px) 
+    and (device-height : 1058px) 
+    and (-webkit-device-pixel-ratio : 2) { 
+      #section3{
+        height: 100vh;
+      }
 }
 /* @media screen and (max-width:1441px){
   #section3{
