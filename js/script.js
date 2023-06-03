@@ -1,10 +1,10 @@
 
 const tabs = document.querySelectorAll(".scrollable-tabs-container a");
         const rightArrow = document.querySelector(
-          ".scrollable-tabs-container .right-arrow svg"
+          ".scrollable-tabs-container .right-arrow i"
         );
         const leftArrow = document.querySelector(
-          ".scrollable-tabs-container .left-arrow svg"
+          ".scrollable-tabs-container .left-arrow i"
         );
         const tabsList = document.querySelector(".scrollable-tabs-container ul");
         const leftArrowContainer = document.querySelector(
