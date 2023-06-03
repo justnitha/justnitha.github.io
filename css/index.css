@@ -50,26 +50,50 @@ body{
 
   
 }
-@media  screen and (device-width : 375px) and (device-height : 812px) {
-  #section3{
-    height: 80vh;
-  }
+@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 896px) 
+    and (-webkit-device-pixel-ratio : 2) { 
+      #section3{
+        height: 100vh;
+      }
+    }
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 667px) 
+    and (-webkit-device-pixel-ratio : 2) { 
+      #section3{
+        height: 130vh;
+      }
 }
-@media screen and (max-width:767px){
-  #section3{
-    height: 130vh;
-  }
+@media only screen 
+    and (device-width : 820px) 
+    and (device-height : 1180px) 
+    and (-webkit-device-pixel-ratio : 2) { 
+      #section3{
+        height: 70vh;
+      }
 }
-@media screen and (min-width:1024px ){
-  #section3{
-    height: 120vh;
-  }
-}
-@media screen and (min-width:768px) and (max-width:1024px){
+@media screen and (min-width:1024px ) {
   #section3{
     height: 160vh;
   }
 }
+@media screen and (min-width:1280px ) {
+  #section3{
+    height: 120vh;
+  }
+}
+@media screen and (min-width:1440px){
+  #section3{
+    height: 100vh;
+  }
+}
+/* @media screen and (min-width:768px) and (max-width:1024px){
+  #section3{
+    height: 160vh;
+  }
+} */
 #section3 #h1{
   background-color: #FB8122;
   color: #fff;
