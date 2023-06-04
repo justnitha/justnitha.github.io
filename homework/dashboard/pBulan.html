@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Trajusz || Harian</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/image_index/favicon-32x32.png">
+    <link rel="stylesheet" href="/pluggin/font-awesome/css/all.css">
+    <link rel="stylesheet" href="/pluggin/css/master.css">
+    <link rel="stylesheet" href="/homework/css/pHarian.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="flex-wrap flex py-5 bg-blue-500 text-white">
+        <div class="w-1/5 text-center">
+            <h1 class="text-2xl font-bold text-white">PameaT<span class="text-slate-300">App</span></h1>
+        </div>
+        <div class="w-[80%] flex justify-between items-center px-5">
+            <div>
+                <i class="fa-solid fa-bars fa-2xl"style="color: #ffffff;"></i>
+            </div>
+            <div class="flex items-center gap-3">
+                <i class="fa-solid fa-user fa-xl" style="color: #ffffff;"></i>
+                <h2>Trajuszt-Administrator</h2>
+                <a href="" class="flex items-center ms-5 gap-3">
+                    <i class="fa-solid fa-right-from-bracket fa-xl " style="color: #ffffff;"></i>
+                    <h2>LOGOUT</h2>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- Akhir -->
+     <!-- section1 -->
+     <section class="flex items-center text-white">
+        <!-- menu dashboard -->
+        <div class="w-1/5 bg-[#242d31] h-screen">
+            <!-- profil -->
+            <div class="flex items-center gap-4 p-5">
+                <div class="p-5 text-center bg-white rounded-[50%]">
+                    <i class="fa-solid fa-user fa-xl" style="color: black"></i>
+                </div>
+                <div class="text-xl">
+                    <h2 class="font-bold">Trajuszzzzt</h2>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-circle" style="color: #0d721e;"></i>
+                        <p>Online</p>
+                    </div>
+                </div>
+            </div>
+            <!-- main navigation -->
+            <div class="py-5 text-center bg-[#1b2225] text-[#616466]">
+                <h3>MAIN NAVIGATION</h3>
+            </div>
+            <div class="p-5" style="color: #bac7cc;">
+                <button class="flex items-center gap-10">
+                    <i class="fa-solid fa-palette fa-2xl"></i>
+                    <h3 class="text-xl font-medium">DASHBOARD</h3>
+                </button>
+                <button class="flex items-center gap-10 mt-5">
+                    <i class="fa-solid fa-folder fa-2xl"></i>
+                    <h3 class="text-xl font-medium">DATA KATEGORI</h3>
+                </button>
+                <button class="flex items-center gap-10 mt-5">
+                    <i class="fa-solid fa-folder fa-2xl"></i>
+                    <h3 class="text-xl font-medium">DATA TRANSAKSI</h3>
+                </button>
+                <button class="flex items-center gap-10 mt-5 ">
+                    <i class="fa-regular fa-hand fa-2xl"></i>
+                    <h3 class="text-xl font-medium">HUTANG PIUTANG</h3>
+                    <i class="fa-solid fa-chevron-left ms-auto"></i>
+                </button>
+                <button class="flex items-center gap-10 mt-5 uppercase">
+                    <i class="fa-solid fa-money-check fa-2xl"></i>
+                    <h3 class="text-xl font-medium">rekening bank</h3>
+                </button>
+                <button class="flex items-center gap-10 mt-5 uppercase">
+                    <i class="fa-solid fa-users fa-2xl"></i>
+                    <h3 class="text-xl font-medium">data pengguna</h3>
+                    <i class="fa-solid fa-chevron-left ms-auto"></i>
+                </button>
+                <button class="flex items-center gap-12 mt-5 ms-2 uppercase">
+                    <i class="fa-regular fa-file fa-2xl"></i>
+                    <h3 class="text-xl font-medium">laporan</h3>
+                </button>
+                <button class="flex items-center gap-11 mt-5 ms-2 uppercase">
+                    <i class="fa-sharp fa-solid fa-lock fa-2xl"></i>
+                    <h3 class="text-xl font-medium">Ganti password</h3>
+                </button>
+                <button class="flex items-center gap-10 mt-5 ms-2 uppercase">
+                    <i class="fa-solid fa-right-from-bracket fa-2xl"></i>
+                    <h3 class="text-xl font-medium">logout</h3>
+                </button>        
+            </div>
+        </div>
+        <!-- akhir menu dashboard -->
+
+        <!-- manu info -->
+        <div class="w-[80%] p-5 text-black bg-blue-50 h-screen">
+            <div class="flex justify-between items-center">
+                <h1 class="text-3xl">Pemasukan Bulanan<span class="text-xl"> April 2023</span></h1>
+                <div class="flex items-center gap-2">
+                    <a href="/homework/dashboard/dashboard.html" class="flex items-center gap-1">
+                        <i class="fa-solid fa-palette"></i>
+                        <h3>Home</h3>
+                    </a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <a href="#">Dashboard</a>
+                </div>
+            </div>
+            <!-- Table harian-->
+            <table class="table-fixed mt-10 w-full border-collapse border border-slate-500">
+                <thead class="bg-[#242d31] text-slate-100 text-2xl">
+                  <tr>
+                    <th class="border border-slate-600 w-20 py-3">No</th>
+                    <th class="border border-slate-600 w-52">Hari</th>
+                    <th class="border border-slate-600 w-52">Tanggal</th>
+                    <th class="border border-slate-600 w-80">Jumlah</th>
+                    <th class="border border-slate-600">Keterangan</th>
+                  </tr>
+                </thead>
+                <tbody class="text-xl">
+                  <tr>
+                    <td class="border border-slate-600 text-center">1</td>
+                    <td class="border border-slate-600 p-2">Senin</td>
+                    <td class="border border-slate-600 p-2">01-05-2023</td>
+                    <td class="border border-slate-600 p-2">30.000.000</td>
+                  </tr>
+                  <tr>
+                    <td class="border border-slate-600 text-center">2</td>
+                    <td class="border border-slate-600 p-2">Selasa</td>
+                    <td class="border border-slate-600 p-2">02-05-2023</td>
+                    <td class="border border-slate-600 p-2">30.000.000</td>
+                  </tr>
+                  <tr>
+                    <td class="border border-slate-600 text-center">3</td>
+                    <td class="border border-slate-600 p-2">Rabu</td>
+                    <td class="border border-slate-600 p-2">03-05-2023</td>
+                    <td class="border border-slate-600 p-2">30.000.000</td>
+                  </tr>
+                  <tr>
+                    <td class="border border-slate-600 text-center">4</td>
+                    <td class="border border-slate-600 p-2">Kamis</td>
+                    <td class="border border-slate-600 p-2">04-05-2023</td>
+                    <td class="border border-slate-600 p-2">30.000.000</td>
+                  </tr>
+                  <tr>
+                    <td class="border border-slate-600 text-center">5</td>
+                    <td class="border border-slate-600 p-2">Jumat</td>
+                    <td class="border border-slate-600 p-2">05-05-2023</td>
+                    <td class="border border-slate-600 p-2">30.000.000</td>
+                  </tr>
+                  <tr>
+                    <td class="border border-slate-600 text-center">6</td>
+                    <td class="border border-slate-600 p-2">Sabtu</td>
+                    <td class="border border-slate-600 p-2">06-05-2023</td>
+                    <td class="border border-slate-600 p-2">30.000.000</td>
+                  </tr>
+                  <tr>
+                    <td class="border border-slate-600 text-center">7</td>
+                    <td class="border border-slate-600 p-2">Minggu</td>
+                    <td class="border border-slate-600 p-2">07-05-2023</td>
+                    <td class="border border-slate-600 p-2">30.000.000</td>
+                  </tr>
+                  <tr>
+                    <td class="border border-slate-600 text-center">8</td>
+                    <td class="border border-slate-600 p-2">Senin</td>
+                    <td class="border border-slate-600 p-2">08-05-2023</td>
+                    <td class="border border-slate-600 p-2">30.000.000</td>
+                  </tr>
+                  <tr>
+                    <td class="border border-slate-600 text-center">9</td>
+                    <td class="border border-slate-600 p-2">Selasa</td>
+                    <td class="border border-slate-600 p-2">09-05-2023</td>
+                    <td class="border border-slate-600 p-2">30.000.000</td>
+                  </tr>
+                  <tr>
+                    <td class="border border-slate-600 text-center">10</td>
+                    <td class="border border-slate-600 p-2">Rabu</td>
+                    <td class="border border-slate-600 p-2">10-05-2023</td>
+                    <td class="border border-slate-600 p-2">30.000.000</td>
+                    <td>dfassfd</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="flex mt-1">
+                <button class="p-2 bg-slate-400 rounded-sm text-lg text-white border-2">View All</button>
+                <button class="p-2 bg-slate-400 rounded-sm text-lg text-white border-y-2 border-e-2">20 rows</button>
+                <button class="p-2 bg-slate-400 rounded-sm text-lg text-white border-y-2">50 rows</button>
+                <button class="p-2 bg-slate-400 rounded-sm text-lg text-white border-2">100 rows</button>
+              </div>
+              <div class="flex gap-3 text-xl text-white">
+                <button class="ms-auto p-3 bg-red-600 rounded-xl">Tambah<i class="fa-solid fa-plus ms-1"></i></button>
+                <button class="p-3 bg-blue-600 rounded-xl me-2">Hapus<i class="fa-solid fa-minus ms-2"></i></button>
+              </div>
+        </div>
+        <!-- akhir manu info -->
+    </section>
+    <!--akhir  section1 -->
+</body>
+</html>
