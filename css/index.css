@@ -108,7 +108,7 @@ body{
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   #section3{
-    height: 100vh;
+    height: 105vh;
   }
 }
 @media only screen and (max-width: 375px) {
@@ -127,14 +127,14 @@ body{
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   #section3{
-    height: 80vh;
+    height: 100vh;
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   #section3{
-    height: 130vh;
+    height: 100vh;
   }
   #aktif{
     height: 100%;
