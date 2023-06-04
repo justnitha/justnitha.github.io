@@ -22,7 +22,7 @@
     }
     </style>
   </head>
-<body>
+<body id="body">
     <!-- loading page -->
     <div id="app" style="display: flex; justify-content: center; align-items: center;">
       <!-- new element created -->
@@ -30,11 +30,19 @@
     <script>
       onload = function() {
         // inisialisasi
+        let gear = document.getElementById("gear")
+        let body = document.getElementById("body")
         let id = document.getElementById("app")
         let loading = document.createElement("div")
         // fill the content
         loading.textContent = "Loading"
-        loading.style.fontSize = "28px"
+        loading.style.fontSize = "100px"
+        body.style.overflow="hidden"
+        gear.style.display="none"
+        id.style.backgroundColor="white"
+        id.style.width="100%"
+        id.style.height="100vh"
+        id.style.zIndex="11"
         id.appendChild(loading)
         // dalam waktu berapa lama dilakukan pengubahan DOM
         let loaded = setInterval(() => {
@@ -43,7 +51,11 @@
 
         setTimeout(() => {
           clearInterval(loaded)
-          loading.textContent = "welcome To Our Page"
+          loading.textContent = ""
+          body.style.overflow="auto"
+          gear.style.display="block"
+          id.style.position="relative"
+          id.style.display="none"
         }, 4000) //4s
       }
     </script>
