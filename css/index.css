@@ -74,14 +74,9 @@ body{
         height: 70vh;
       }
 }
-@media screen and (min-width:1024px ) {
-  #section3{
-    height: 120vh;
-  }
-}
 @media screen and (min-width:1344px) {
   #section3{
-    height: 100vh;
+    height: 140vh;
   }
 }
 @media screen and (min-width:1280px ) and (max-width:1344px) {
