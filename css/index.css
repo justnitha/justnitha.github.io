@@ -30,13 +30,13 @@ body{
   border-color: black;
 }
 /* section 2 */
-#section #gambarr{
+#section2 #gambarr{
   transition: all .5s ease-in-out;
+  border-radius: 50%;
 }
 #section2 #gambarr:hover{
   background-color: #705ff6;
-  border-radius: 50%;
-  transform: translateY(-3rem);
+  transform: translateY(-2rem);
 }
 .text marquee{
   font-size: 100px;
