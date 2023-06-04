@@ -1087,6 +1087,10 @@ video {
   height: 100%;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .max-h-\[150vh\] {
   max-height: 150vh;
 }
@@ -1105,6 +1109,10 @@ video {
 
 .w-1\/4 {
   width: 25%;
+}
+
+.w-1\/5 {
+  width: 20%;
 }
 
 .w-1\/6 {
@@ -1195,12 +1203,24 @@ video {
   width: 50%;
 }
 
+.w-\[80\%\] {
+  width: 80%;
+}
+
 .w-\[87\%\] {
   width: 87%;
 }
 
 .w-full {
   width: 100%;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[400px\] {
+  width: 400px;
 }
 
 .flex-shrink {
@@ -1746,8 +1766,20 @@ video {
   justify-items: stretch;
 }
 
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .gap-10 {
   gap: 2.5rem;
+}
+
+.gap-11 {
+  gap: 2.75rem;
+}
+
+.gap-12 {
+  gap: 3rem;
 }
 
 .gap-2 {
@@ -1760,6 +1792,10 @@ video {
 
 .gap-28 {
   gap: 7rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
 }
 
 .gap-4 {
@@ -2094,6 +2130,10 @@ video {
   border-radius: 1.5rem;
 }
 
+.rounded-\[50\%\] {
+  border-radius: 50%;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -2280,6 +2320,26 @@ video {
   border-color: rgb(222 103 89 / var(--tw-border-opacity));
 }
 
+.bg-\[\#1b2225\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(27 34 37 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#242d31\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(36 45 49 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#419156\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(65 145 86 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#49a461\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(73 164 97 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#705ff6\] {
   --tw-bg-opacity: 1;
   background-color: rgb(112 95 246 / var(--tw-bg-opacity));
@@ -2358,6 +2418,11 @@ video {
 .bg-blue-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(239 246 255 / var(--tw-bg-opacity));
+}
+
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
 .bg-green-400 {
@@ -2447,6 +2512,53 @@ video {
 .bg-yellow-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(254 252 232 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#2d72b2\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(45 114 178 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#\] {
+  background-color: #;
+}
+
+.bg-\[\#27659e\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(39 101 158 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#f08b3b\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 139 59 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#d67c34\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(214 124 52 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#101010\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(16 16 16 / var(--tw-bg-opacity));
+}
+
+.bg-\[cd5542\] {
+  background-color: cd5542;
+}
+
+.bg-\[\#cd5542\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(205 85 66 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#2cd5542\] {
+  background-color: #2cd5542;
+}
+
+.bg-\[\#b64b3a\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(182 75 58 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-20 {
@@ -2630,6 +2742,10 @@ video {
      object-fit: scale-down;
 }
 
+.p-1 {
+  padding: 0.25rem;
+}
+
 .p-10 {
   padding: 2.5rem;
 }
@@ -2660,6 +2776,10 @@ video {
 
 .p-\[\.5rem\] {
   padding: .5rem;
+}
+
+.p-\[\.2rem\] {
+  padding: .2rem;
 }
 
 .px-10 {
@@ -3108,9 +3228,19 @@ video {
   color: rgb(51 102 153 / .35);
 }
 
+.text-\[\#49a461\] {
+  --tw-text-opacity: 1;
+  color: rgb(73 164 97 / var(--tw-text-opacity));
+}
+
 .text-\[\#555555\] {
   --tw-text-opacity: 1;
   color: rgb(85 85 85 / var(--tw-text-opacity));
+}
+
+.text-\[\#616466\] {
+  --tw-text-opacity: 1;
+  color: rgb(97 100 102 / var(--tw-text-opacity));
 }
 
 .text-\[\#8a8a8a\] {
@@ -3216,6 +3346,26 @@ video {
 .text-yellow-500 {
   --tw-text-opacity: 1;
   color: rgb(234 179 8 / var(--tw-text-opacity));
+}
+
+.text-\[\#2d72b2\] {
+  --tw-text-opacity: 1;
+  color: rgb(45 114 178 / var(--tw-text-opacity));
+}
+
+.text-\[\#f08b3b\] {
+  --tw-text-opacity: 1;
+  color: rgb(240 139 59 / var(--tw-text-opacity));
+}
+
+.text-\[\#101010\] {
+  --tw-text-opacity: 1;
+  color: rgb(16 16 16 / var(--tw-text-opacity));
+}
+
+.text-\[\#cd5542\] {
+  --tw-text-opacity: 1;
+  color: rgb(205 85 66 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -3803,10 +3953,6 @@ video {
 
   .md\:hidden {
     display: none;
-  }
-
-  .md\:h-\[155vh\] {
-    height: 155vh;
   }
 
   .md\:h-\[100vh\] {

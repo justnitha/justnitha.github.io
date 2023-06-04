@@ -37,7 +37,7 @@
         // fill the content
         loading.textContent = "Loading"
         loading.style.fontSize = "100px"
-        body.style.overflow="hidden"
+        body.style.overflowY="hidden"
         gear.style.display="none"
         id.style.backgroundColor="white"
         id.style.width="100%"
@@ -52,7 +52,7 @@
         setTimeout(() => {
           clearInterval(loaded)
           loading.textContent = ""
-          body.style.overflow="auto"
+          body.style.overflowY="auto"
           gear.style.display="block"
           id.style.position="relative"
           id.style.display="none"
@@ -231,6 +231,17 @@
                   </div>
                   <button id="btnn" class="btnf btn-background-slide">
                     <a href="/homework/tugas1.html">Lihat tugas</a>
+                  </button>
+              </div>
+            </li> 
+            <li>
+              <div class=" text-center border-2 border-radial-300 active w-[300px] lg:w-[500px] h-full" id="aktif">
+                <h1 class="lg:text-3xl text-2xl">DashboarD</h1>
+                  <div class="">
+                      <img src="/homework/image/dashboard.png" alt="tugas2" >
+                  </div>
+                  <button id="btnn" class="btnf btn-background-slide">
+                    <a href="/homework/dashboard.html">Lihat tugas</a>
                   </button>
               </div>
             </li> 
